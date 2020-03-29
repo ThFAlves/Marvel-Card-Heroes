@@ -1,0 +1,767 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 53;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F0D8B171B5580FC002FDBAD /* ShopScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D8B161B5580FC002FDBAD /* ShopScene.swift */; };
+		0F26ED5E1B51A8870080D457 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F26ED5D1B51A8870080D457 /* AppDelegate.swift */; };
+		0F26ED601B51A8870080D457 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0F26ED5F1B51A8870080D457 /* GameScene.sks */; };
+		0F26ED641B51A8870080D457 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F26ED631B51A8870080D457 /* GameViewController.swift */; };
+		0F26ED691B51A8870080D457 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F26ED681B51A8870080D457 /* Images.xcassets */; };
+		0F26ED781B51A8870080D457 /* Marvel_Cards_HeroesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F26ED771B51A8870080D457 /* Marvel_Cards_HeroesTests.swift */; };
+		0F5DCEE71B54527800D6A2AF /* BoosterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5DCEE61B54527800D6A2AF /* BoosterCell.swift */; };
+		0F72D1181B59E88E00708E7D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F72D11A1B59E88E00708E7D /* InfoPlist.strings */; };
+		0F72D11D1B59E88F00708E7D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F72D11F1B59E88F00708E7D /* Localizable.strings */; };
+		0F72D1221B59E88F00708E7D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F72D1241B59E88F00708E7D /* InfoPlist.strings */; };
+		0F72D1251B59E8A700708E7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F72D1271B59E8A700708E7D /* Main.storyboard */; };
+		0FD4B7A41B51AA490087CA93 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD4B7A31B51AA490087CA93 /* MenuViewController.swift */; };
+		0FD4B7A81B51B1AB0087CA93 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD4B7A71B51B1AB0087CA93 /* ShopViewController.swift */; };
+		0FD4B7AA1B51BAA20087CA93 /* OptionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD4B7A91B51BAA20087CA93 /* OptionCollectionViewCell.swift */; };
+		0FD4B7AC1B51BAD00087CA93 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD4B7AB1B51BAD00087CA93 /* Options.swift */; };
+		2AA706811B5D214F00A29925 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA706801B5D214F00A29925 /* Card.swift */; };
+		2AA7068F1B5ED29E00A29925 /* iron_man_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AA7068E1B5ED29E00A29925 /* iron_man_screen.png */; };
+		2AD63E2E1B5EDDC200BFCDDD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AD63E2D1B5EDDC200BFCDDD /* LaunchScreen.xib */; };
+		2AD63E321B5F52FD00BFCDDD /* symbol.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD63E311B5F52FD00BFCDDD /* symbol.png */; };
+		2AD63E341B5F5DF500BFCDDD /* MeuDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD63E331B5F5DF500BFCDDD /* MeuDeck.swift */; };
+		2AD63E361B5F607200BFCDDD /* CardsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD63E351B5F607200BFCDDD /* CardsCollectionViewCell.swift */; };
+		7F3A37E31B599191007A6D33 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A37E21B599191007A6D33 /* GameScene.swift */; };
+		7F3A37E91B5991C5007A6D33 /* MakeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A37E81B5991C5007A6D33 /* MakeCard.swift */; };
+		7F3A37EF1B59927D007A6D33 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A37EE1B59927D007A6D33 /* Deck.swift */; };
+		7F3A37F11B599289007A6D33 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A37F01B599289007A6D33 /* Feature.swift */; };
+		7F3A37F31B599296007A6D33 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A37F21B599296007A6D33 /* User.swift */; };
+		7F3A37F51B5992A9007A6D33 /* CardsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A37F41B5992A9007A6D33 /* CardsService.swift */; };
+		7F3A37F91B5992C6007A6D33 /* UserServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A37F81B5992C6007A6D33 /* UserServices.swift */; };
+		7F3A37FB1B5992DB007A6D33 /* CardDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A37FA1B5992DB007A6D33 /* CardDAO.swift */; };
+		7F3A37FF1B5992EF007A6D33 /* FeatureDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A37FE1B5992EF007A6D33 /* FeatureDAO.swift */; };
+		7F3A38011B5992F9007A6D33 /* UserDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A38001B5992F9007A6D33 /* UserDAO.swift */; };
+		7F3A38041B59930F007A6D33 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A38021B59930F007A6D33 /* Model.xcdatamodeld */; };
+		7F3A38071B59931E007A6D33 /* CarregaCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A38051B59931E007A6D33 /* CarregaCoreData.swift */; };
+		7F3A38081B59931E007A6D33 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A38061B59931E007A6D33 /* DatabaseManager.swift */; };
+		7F3A380E1B599470007A6D33 /* bronze.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F3A38091B599470007A6D33 /* bronze.png */; };
+		7F3A38101B599470007A6D33 /* ouro.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F3A380B1B599470007A6D33 /* ouro.png */; };
+		7F3A38111B599470007A6D33 /* prata.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F3A380C1B599470007A6D33 /* prata.png */; };
+		A75F0ACA1B59873A004AC004 /* HeroModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75F0AC91B59873A004AC004 /* HeroModeViewController.swift */; };
+		A7D6C11F1B6191110016D328 /* American Captain.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7D6C11D1B6191110016D328 /* American Captain.ttf */; };
+		A7D6C1201B6191110016D328 /* AVENGEANCE.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7D6C11E1B6191110016D328 /* AVENGEANCE.ttf */; };
+		A7D6C1221B61A4780016D328 /* board_black_line_texture_background_wood_55220_2560x1600.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A7D6C1211B61A4780016D328 /* board_black_line_texture_background_wood_55220_2560x1600.jpg */; };
+		A7D6C1241B61A65C0016D328 /* comics-11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A7D6C1231B61A65C0016D328 /* comics-11.jpg */; };
+		A7D6C1271B61B8F20016D328 /* IRON MAN OF WAR 001C NCV.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7D6C1291B61B8F20016D328 /* IRON MAN OF WAR 001C NCV.ttf */; };
+		ABF713B524312F2900B98DD6 /* Cards.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABF713B424312F2900B98DD6 /* Cards.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0F26ED721B51A8870080D457 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F26ED501B51A8870080D457 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F26ED571B51A8870080D457;
+			remoteInfo = "Marvel Cards Heroes";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F0D8B161B5580FC002FDBAD /* ShopScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopScene.swift; sourceTree = "<group>"; };
+		0F26ED581B51A8870080D457 /* Marvel Cards Heroes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Marvel Cards Heroes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F26ED5C1B51A8870080D457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F26ED5D1B51A8870080D457 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0F26ED5F1B51A8870080D457 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		0F26ED631B51A8870080D457 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		0F26ED681B51A8870080D457 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0F26ED711B51A8870080D457 /* Marvel Cards HeroesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Marvel Cards HeroesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F26ED761B51A8870080D457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F26ED771B51A8870080D457 /* Marvel_Cards_HeroesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marvel_Cards_HeroesTests.swift; sourceTree = "<group>"; };
+		0F5DCEE61B54527800D6A2AF /* BoosterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoosterCell.swift; sourceTree = "<group>"; };
+		0F72D1191B59E88E00708E7D /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0F72D11E1B59E88F00708E7D /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0F72D1231B59E88F00708E7D /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0F72D1261B59E8A700708E7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0F72D1291B59E8AC00708E7D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		0F72D12B1B59E8B100708E7D /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Main.strings; sourceTree = "<group>"; };
+		0FD4B7A31B51AA490087CA93 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = ../MenuViewController.swift; sourceTree = "<group>"; };
+		0FD4B7A71B51B1AB0087CA93 /* ShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		0FD4B7A91B51BAA20087CA93 /* OptionCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionCollectionViewCell.swift; sourceTree = "<group>"; };
+		0FD4B7AB1B51BAD00087CA93 /* Options.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
+		2AA706801B5D214F00A29925 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		2AA7068E1B5ED29E00A29925 /* iron_man_screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iron_man_screen.png; sourceTree = "<group>"; };
+		2AD63E2D1B5EDDC200BFCDDD /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		2AD63E311B5F52FD00BFCDDD /* symbol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = symbol.png; sourceTree = "<group>"; };
+		2AD63E331B5F5DF500BFCDDD /* MeuDeck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeuDeck.swift; sourceTree = "<group>"; };
+		2AD63E351B5F607200BFCDDD /* CardsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsCollectionViewCell.swift; sourceTree = "<group>"; };
+		7F3A37E21B599191007A6D33 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameScene.swift; path = ../GameScene.swift; sourceTree = "<group>"; };
+		7F3A37E81B5991C5007A6D33 /* MakeCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MakeCard.swift; path = ../MakeCard.swift; sourceTree = "<group>"; };
+		7F3A37EE1B59927D007A6D33 /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		7F3A37F01B599289007A6D33 /* Feature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
+		7F3A37F21B599296007A6D33 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7F3A37F41B5992A9007A6D33 /* CardsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsService.swift; sourceTree = "<group>"; };
+		7F3A37F81B5992C6007A6D33 /* UserServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserServices.swift; sourceTree = "<group>"; };
+		7F3A37FA1B5992DB007A6D33 /* CardDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDAO.swift; sourceTree = "<group>"; };
+		7F3A37FE1B5992EF007A6D33 /* FeatureDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureDAO.swift; sourceTree = "<group>"; };
+		7F3A38001B5992F9007A6D33 /* UserDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDAO.swift; sourceTree = "<group>"; };
+		7F3A38031B59930F007A6D33 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		7F3A38051B59931E007A6D33 /* CarregaCoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarregaCoreData.swift; sourceTree = "<group>"; };
+		7F3A38061B59931E007A6D33 /* DatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		7F3A38091B599470007A6D33 /* bronze.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bronze.png; sourceTree = "<group>"; };
+		7F3A380B1B599470007A6D33 /* ouro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ouro.png; sourceTree = "<group>"; };
+		7F3A380C1B599470007A6D33 /* prata.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prata.png; sourceTree = "<group>"; };
+		A75F0AC91B59873A004AC004 /* HeroModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroModeViewController.swift; sourceTree = "<group>"; };
+		A7D6C11D1B6191110016D328 /* American Captain.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "American Captain.ttf"; sourceTree = "<group>"; };
+		A7D6C11E1B6191110016D328 /* AVENGEANCE.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AVENGEANCE.ttf; sourceTree = "<group>"; };
+		A7D6C1211B61A4780016D328 /* board_black_line_texture_background_wood_55220_2560x1600.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = board_black_line_texture_background_wood_55220_2560x1600.jpg; sourceTree = "<group>"; };
+		A7D6C1231B61A65C0016D328 /* comics-11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "comics-11.jpg"; sourceTree = "<group>"; };
+		A7D6C1281B61B8F20016D328 /* pt */ = {isa = PBXFileReference; lastKnownFileType = file; name = pt; path = "pt.lproj/IRON MAN OF WAR 001C NCV.ttf"; sourceTree = "<group>"; };
+		A7D6C12A1B61B8F70016D328 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = "en.lproj/IRON MAN OF WAR 001C NCV.ttf"; sourceTree = "<group>"; };
+		ABF713B424312F2900B98DD6 /* Cards.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Cards.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F26ED551B51A8870080D457 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F26ED6E1B51A8870080D457 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F26ED4F1B51A8870080D457 = {
+			isa = PBXGroup;
+			children = (
+				ABF713B324312F0200B98DD6 /* Supporting Files */,
+				2A719F801B5FFB7C005333B0 /* Image_details */,
+				7F3A37E01B59915C007A6D33 /* VO */,
+				7F3A37DF1B599154007A6D33 /* Services */,
+				7F3A37ED1B599250007A6D33 /* Persistence */,
+				0F5DCEE61B54527800D6A2AF /* BoosterCell.swift */,
+				7F3A38021B59930F007A6D33 /* Model.xcdatamodeld */,
+				0F72D1271B59E8A700708E7D /* Main.storyboard */,
+				2AD63E2D1B5EDDC200BFCDDD /* LaunchScreen.xib */,
+				0FD4B7AB1B51BAD00087CA93 /* Options.swift */,
+				0FD4B7A91B51BAA20087CA93 /* OptionCollectionViewCell.swift */,
+				2AD63E351B5F607200BFCDDD /* CardsCollectionViewCell.swift */,
+				A75F0AC91B59873A004AC004 /* HeroModeViewController.swift */,
+				7F3A37EA1B5991CE007A6D33 /* Deck Collection */,
+				0F26ED5A1B51A8870080D457 /* Marvel Cards Heroes */,
+				0F26ED741B51A8870080D457 /* Marvel Cards HeroesTests */,
+				0F26ED591B51A8870080D457 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0F26ED591B51A8870080D457 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F26ED581B51A8870080D457 /* Marvel Cards Heroes.app */,
+				0F26ED711B51A8870080D457 /* Marvel Cards HeroesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F26ED5A1B51A8870080D457 /* Marvel Cards Heroes */ = {
+			isa = PBXGroup;
+			children = (
+				0F26ED851B51A9B50080D457 /* Card */,
+				0F26ED841B51A99C0080D457 /* System */,
+				0F26ED831B51A9940080D457 /* Scenes */,
+				A7D6C1231B61A65C0016D328 /* comics-11.jpg */,
+				A7D6C1211B61A4780016D328 /* board_black_line_texture_background_wood_55220_2560x1600.jpg */,
+				0F26ED5B1B51A8870080D457 /* Supporting Files */,
+			);
+			path = "Marvel Cards Heroes";
+			sourceTree = "<group>";
+		};
+		0F26ED5B1B51A8870080D457 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F72D11F1B59E88F00708E7D /* Localizable.strings */,
+				0F72D11A1B59E88E00708E7D /* InfoPlist.strings */,
+				0F26ED861B51A9BC0080D457 /* Font */,
+				0F26ED5C1B51A8870080D457 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0F26ED741B51A8870080D457 /* Marvel Cards HeroesTests */ = {
+			isa = PBXGroup;
+			children = (
+				0F26ED771B51A8870080D457 /* Marvel_Cards_HeroesTests.swift */,
+				0F26ED751B51A8870080D457 /* Supporting Files */,
+			);
+			path = "Marvel Cards HeroesTests";
+			sourceTree = "<group>";
+		};
+		0F26ED751B51A8870080D457 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F72D1241B59E88F00708E7D /* InfoPlist.strings */,
+				0F26ED761B51A8870080D457 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0F26ED831B51A9940080D457 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				0F26ED5F1B51A8870080D457 /* GameScene.sks */,
+				7F3A37E21B599191007A6D33 /* GameScene.swift */,
+				0F0D8B161B5580FC002FDBAD /* ShopScene.swift */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		0F26ED841B51A99C0080D457 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				0F26ED5D1B51A8870080D457 /* AppDelegate.swift */,
+				0F26ED631B51A8870080D457 /* GameViewController.swift */,
+				0FD4B7A31B51AA490087CA93 /* MenuViewController.swift */,
+				0FD4B7A71B51B1AB0087CA93 /* ShopViewController.swift */,
+			);
+			name = System;
+			sourceTree = "<group>";
+		};
+		0F26ED851B51A9B50080D457 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				7F3A37E81B5991C5007A6D33 /* MakeCard.swift */,
+			);
+			name = Card;
+			sourceTree = "<group>";
+		};
+		0F26ED861B51A9BC0080D457 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				A7D6C11D1B6191110016D328 /* American Captain.ttf */,
+				A7D6C1291B61B8F20016D328 /* IRON MAN OF WAR 001C NCV.ttf */,
+				A7D6C11E1B6191110016D328 /* AVENGEANCE.ttf */,
+			);
+			name = Font;
+			sourceTree = "<group>";
+		};
+		2A719F801B5FFB7C005333B0 /* Image_details */ = {
+			isa = PBXGroup;
+			children = (
+				7F3A380B1B599470007A6D33 /* ouro.png */,
+				7F3A380C1B599470007A6D33 /* prata.png */,
+				7F3A38091B599470007A6D33 /* bronze.png */,
+				2AD63E311B5F52FD00BFCDDD /* symbol.png */,
+				2AA7068E1B5ED29E00A29925 /* iron_man_screen.png */,
+			);
+			name = Image_details;
+			sourceTree = "<group>";
+		};
+		7F3A37DF1B599154007A6D33 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7F3A37F81B5992C6007A6D33 /* UserServices.swift */,
+				7F3A37F41B5992A9007A6D33 /* CardsService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		7F3A37E01B59915C007A6D33 /* VO */ = {
+			isa = PBXGroup;
+			children = (
+				2AA706801B5D214F00A29925 /* Card.swift */,
+				7F3A37F21B599296007A6D33 /* User.swift */,
+				7F3A37F01B599289007A6D33 /* Feature.swift */,
+				7F3A37EE1B59927D007A6D33 /* Deck.swift */,
+			);
+			name = VO;
+			sourceTree = "<group>";
+		};
+		7F3A37E11B599160007A6D33 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				7F3A38001B5992F9007A6D33 /* UserDAO.swift */,
+				7F3A37FE1B5992EF007A6D33 /* FeatureDAO.swift */,
+				7F3A37FA1B5992DB007A6D33 /* CardDAO.swift */,
+			);
+			name = DAO;
+			sourceTree = "<group>";
+		};
+		7F3A37EA1B5991CE007A6D33 /* Deck Collection */ = {
+			isa = PBXGroup;
+			children = (
+				2AD63E331B5F5DF500BFCDDD /* MeuDeck.swift */,
+			);
+			name = "Deck Collection";
+			sourceTree = "<group>";
+		};
+		7F3A37ED1B599250007A6D33 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				7F3A38061B59931E007A6D33 /* DatabaseManager.swift */,
+				7F3A38051B59931E007A6D33 /* CarregaCoreData.swift */,
+				7F3A37E11B599160007A6D33 /* DAO */,
+			);
+			name = Persistence;
+			sourceTree = "<group>";
+		};
+		ABF713B324312F0200B98DD6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ABF713B424312F2900B98DD6 /* Cards.xcassets */,
+				0F26ED681B51A8870080D457 /* Images.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0F26ED571B51A8870080D457 /* Marvel Cards Heroes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F26ED7B1B51A8870080D457 /* Build configuration list for PBXNativeTarget "Marvel Cards Heroes" */;
+			buildPhases = (
+				0F26ED541B51A8870080D457 /* Sources */,
+				0F26ED551B51A8870080D457 /* Frameworks */,
+				0F26ED561B51A8870080D457 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Marvel Cards Heroes";
+			productName = "Marvel Cards Heroes";
+			productReference = 0F26ED581B51A8870080D457 /* Marvel Cards Heroes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0F26ED701B51A8870080D457 /* Marvel Cards HeroesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F26ED7E1B51A8870080D457 /* Build configuration list for PBXNativeTarget "Marvel Cards HeroesTests" */;
+			buildPhases = (
+				0F26ED6D1B51A8870080D457 /* Sources */,
+				0F26ED6E1B51A8870080D457 /* Frameworks */,
+				0F26ED6F1B51A8870080D457 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0F26ED731B51A8870080D457 /* PBXTargetDependency */,
+			);
+			name = "Marvel Cards HeroesTests";
+			productName = "Marvel Cards HeroesTests";
+			productReference = 0F26ED711B51A8870080D457 /* Marvel Cards HeroesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0F26ED501B51A8870080D457 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = Nexter;
+				TargetAttributes = {
+					0F26ED571B51A8870080D457 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					0F26ED701B51A8870080D457 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 0F26ED571B51A8870080D457;
+					};
+				};
+			};
+			buildConfigurationList = 0F26ED531B51A8870080D457 /* Build configuration list for PBXProject "Marvel Cards Heroes" */;
+			compatibilityVersion = "Xcode 11.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+				pt,
+			);
+			mainGroup = 0F26ED4F1B51A8870080D457;
+			productRefGroup = 0F26ED591B51A8870080D457 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0F26ED571B51A8870080D457 /* Marvel Cards Heroes */,
+				0F26ED701B51A8870080D457 /* Marvel Cards HeroesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0F26ED561B51A8870080D457 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F72D1181B59E88E00708E7D /* InfoPlist.strings in Resources */,
+				7F3A38101B599470007A6D33 /* ouro.png in Resources */,
+				A7D6C1221B61A4780016D328 /* board_black_line_texture_background_wood_55220_2560x1600.jpg in Resources */,
+				A7D6C1271B61B8F20016D328 /* IRON MAN OF WAR 001C NCV.ttf in Resources */,
+				A7D6C1241B61A65C0016D328 /* comics-11.jpg in Resources */,
+				2AA7068F1B5ED29E00A29925 /* iron_man_screen.png in Resources */,
+				A7D6C1201B6191110016D328 /* AVENGEANCE.ttf in Resources */,
+				7F3A380E1B599470007A6D33 /* bronze.png in Resources */,
+				7F3A38111B599470007A6D33 /* prata.png in Resources */,
+				0F26ED691B51A8870080D457 /* Images.xcassets in Resources */,
+				2AD63E2E1B5EDDC200BFCDDD /* LaunchScreen.xib in Resources */,
+				0F72D11D1B59E88F00708E7D /* Localizable.strings in Resources */,
+				2AD63E321B5F52FD00BFCDDD /* symbol.png in Resources */,
+				A7D6C11F1B6191110016D328 /* American Captain.ttf in Resources */,
+				0F26ED601B51A8870080D457 /* GameScene.sks in Resources */,
+				ABF713B524312F2900B98DD6 /* Cards.xcassets in Resources */,
+				0F72D1251B59E8A700708E7D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F26ED6F1B51A8870080D457 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F72D1221B59E88F00708E7D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F26ED541B51A8870080D457 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F3A38071B59931E007A6D33 /* CarregaCoreData.swift in Sources */,
+				0FD4B7A41B51AA490087CA93 /* MenuViewController.swift in Sources */,
+				0FD4B7A81B51B1AB0087CA93 /* ShopViewController.swift in Sources */,
+				0F26ED641B51A8870080D457 /* GameViewController.swift in Sources */,
+				2AD63E361B5F607200BFCDDD /* CardsCollectionViewCell.swift in Sources */,
+				7F3A37F11B599289007A6D33 /* Feature.swift in Sources */,
+				A75F0ACA1B59873A004AC004 /* HeroModeViewController.swift in Sources */,
+				7F3A37F31B599296007A6D33 /* User.swift in Sources */,
+				7F3A37FF1B5992EF007A6D33 /* FeatureDAO.swift in Sources */,
+				2AA706811B5D214F00A29925 /* Card.swift in Sources */,
+				7F3A37FB1B5992DB007A6D33 /* CardDAO.swift in Sources */,
+				7F3A37E91B5991C5007A6D33 /* MakeCard.swift in Sources */,
+				0FD4B7AC1B51BAD00087CA93 /* Options.swift in Sources */,
+				7F3A37E31B599191007A6D33 /* GameScene.swift in Sources */,
+				7F3A37F51B5992A9007A6D33 /* CardsService.swift in Sources */,
+				7F3A37F91B5992C6007A6D33 /* UserServices.swift in Sources */,
+				0F5DCEE71B54527800D6A2AF /* BoosterCell.swift in Sources */,
+				0FD4B7AA1B51BAA20087CA93 /* OptionCollectionViewCell.swift in Sources */,
+				7F3A38011B5992F9007A6D33 /* UserDAO.swift in Sources */,
+				2AD63E341B5F5DF500BFCDDD /* MeuDeck.swift in Sources */,
+				7F3A37EF1B59927D007A6D33 /* Deck.swift in Sources */,
+				7F3A38041B59930F007A6D33 /* Model.xcdatamodeld in Sources */,
+				0F26ED5E1B51A8870080D457 /* AppDelegate.swift in Sources */,
+				0F0D8B171B5580FC002FDBAD /* ShopScene.swift in Sources */,
+				7F3A38081B59931E007A6D33 /* DatabaseManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F26ED6D1B51A8870080D457 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F26ED781B51A8870080D457 /* Marvel_Cards_HeroesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0F26ED731B51A8870080D457 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0F26ED571B51A8870080D457 /* Marvel Cards Heroes */;
+			targetProxy = 0F26ED721B51A8870080D457 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0F72D11A1B59E88E00708E7D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F72D1191B59E88E00708E7D /* pt */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0F72D11F1B59E88F00708E7D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F72D11E1B59E88F00708E7D /* pt */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		0F72D1241B59E88F00708E7D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F72D1231B59E88F00708E7D /* pt */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0F72D1271B59E8A700708E7D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F72D1261B59E8A700708E7D /* Base */,
+				0F72D1291B59E8AC00708E7D /* en */,
+				0F72D12B1B59E8B100708E7D /* pt */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A7D6C1291B61B8F20016D328 /* IRON MAN OF WAR 001C NCV.ttf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7D6C1281B61B8F20016D328 /* pt */,
+				A7D6C12A1B61B8F70016D328 /* en */,
+			);
+			name = "IRON MAN OF WAR 001C NCV.ttf";
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0F26ED791B51A8870080D457 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0F26ED7A1B51A8870080D457 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0F26ED7C1B51A8870080D457 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Marvel Cards Heroes/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.nexter.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0F26ED7D1B51A8870080D457 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Marvel Cards Heroes/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.nexter.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0F26ED7F1B51A8870080D457 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Marvel Cards HeroesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.nexter.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Marvel Cards Heroes.app/Marvel Cards Heroes";
+			};
+			name = Debug;
+		};
+		0F26ED801B51A8870080D457 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Marvel Cards HeroesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.nexter.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Marvel Cards Heroes.app/Marvel Cards Heroes";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F26ED531B51A8870080D457 /* Build configuration list for PBXProject "Marvel Cards Heroes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F26ED791B51A8870080D457 /* Debug */,
+				0F26ED7A1B51A8870080D457 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F26ED7B1B51A8870080D457 /* Build configuration list for PBXNativeTarget "Marvel Cards Heroes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F26ED7C1B51A8870080D457 /* Debug */,
+				0F26ED7D1B51A8870080D457 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F26ED7E1B51A8870080D457 /* Build configuration list for PBXNativeTarget "Marvel Cards HeroesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F26ED7F1B51A8870080D457 /* Debug */,
+				0F26ED801B51A8870080D457 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7F3A38021B59930F007A6D33 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7F3A38031B59930F007A6D33 /* Model.xcdatamodel */,
+			);
+			currentVersion = 7F3A38031B59930F007A6D33 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0F26ED501B51A8870080D457 /* Project object */;
+}

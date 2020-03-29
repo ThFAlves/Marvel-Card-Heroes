@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Homem de Ferro.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

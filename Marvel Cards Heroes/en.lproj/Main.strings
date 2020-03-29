@@ -1,0 +1,51 @@
+
+/* Class = "UILabel"; text = "2 Cartas Bronze"; ObjectID = "4PE-Qx-ZTd"; */
+"4PE-Qx-ZTd.text" = "2 Cartas Bronze";
+
+/* Class = "UIButton"; normalTitle = "Comprar"; ObjectID = "9f3-KU-N4s"; */
+"9f3-KU-N4s.normalTitle" = "Comprar";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Aku-WG-TYA"; */
+"Aku-WG-TYA.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "BgI-gW-kRq"; */
+"BgI-gW-kRq.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Loja"; ObjectID = "FmG-aJ-DOf"; */
+"FmG-aJ-DOf.normalTitle" = "Loja";
+
+/* Class = "UILabel"; text = "4000"; ObjectID = "IqC-g6-i6X"; */
+"IqC-g6-i6X.text" = "4000";
+
+/* Class = "UILabel"; text = "100"; ObjectID = "WGw-00-ZsK"; */
+"WGw-00-ZsK.text" = "100";
+
+/* Class = "UIButton"; normalTitle = "Deck"; ObjectID = "Whp-By-KKN"; */
+"Whp-By-KKN.normalTitle" = "Deck";
+
+/* Class = "UILabel"; text = "Pacote Bronze"; ObjectID = "bOR-Rr-2kT"; */
+"bOR-Rr-2kT.text" = "Pacote Bronze";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "crh-7g-Jub"; */
+"crh-7g-Jub.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "1 Carta Prata"; ObjectID = "cwA-aD-cx7"; */
+"cwA-aD-cx7.text" = "1 Carta Prata";
+
+/* Class = "UIButton"; normalTitle = "HOME"; ObjectID = "fFT-Ys-pCe"; */
+"fFT-Ys-pCe.normalTitle" = "HOME";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ibC-Sz-3qq"; */
+"ibC-Sz-3qq.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "VS"; ObjectID = "lxz-80-mDx"; */
+"lxz-80-mDx.text" = "VS";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "okJ-Lt-L75"; */
+"okJ-Lt-L75.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Hero Mode"; ObjectID = "wou-ZF-9BH"; */
+"wou-ZF-9BH.text" = "Hero Mode";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "zWv-Z6-0So"; */
+"zWv-Z6-0So.normalTitle" = "Button";

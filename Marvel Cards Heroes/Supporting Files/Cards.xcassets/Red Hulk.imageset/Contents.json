@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Red Hulk.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
