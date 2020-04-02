@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AjJ-zC-Qfz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
         <deployment version="4864" identifier="iOS"/>
@@ -12,205 +12,6 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Menu View Controller-->
-        <scene sceneID="GbO-ej-rmK">
-            <objects>
-                <viewController id="FPy-Ji-wOf" customClass="MenuViewController" customModule="Marvel_Cards_Heroes" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="h8F-b7-HTE"/>
-                        <viewControllerLayoutGuide type="bottom" id="v8R-Je-XTL"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="UD4-U1-Mmc">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999966" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="comics-11.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="eT3-QM-Vmt">
-                                <rect key="frame" x="0.0" y="0.0" width="896" height="393"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bar1" translatesAutoresizingMaskIntoConstraints="NO" id="v01-aB-JLD">
-                                <rect key="frame" x="0.0" y="341.5" width="896" height="51.5"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lugar_do_dinheiro" translatesAutoresizingMaskIntoConstraints="NO" id="tmb-yP-Cfh">
-                                <rect key="frame" x="537.5" y="0.0" width="358.5" height="39.5"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="900" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IqC-g6-i6X">
-                                <rect key="frame" x="764" y="4" width="179" height="31.5"/>
-                                <fontDescription key="fontDescription" name="IRONMANOFWAR001CNCV" family="IRON MAN OF WAR 001C NCV" pointSize="45"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Moeda" translatesAutoresizingMaskIntoConstraints="NO" id="hZm-oD-mg4">
-                                <rect key="frame" x="698" y="4" width="53.5" height="27.5"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capitan america" translatesAutoresizingMaskIntoConstraints="NO" id="1sx-s8-ea2">
-                                <rect key="frame" x="0.0" y="48" width="448" height="331"/>
-                            </imageView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7eR-lG-Gn4">
-                                <rect key="frame" x="358.5" y="62" width="537.5" height="259.5"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="p39-Yt-ILj">
-                                    <size key="itemSize" width="280" height="380"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Option Cell" id="h6R-ZN-bIM" customClass="OptionCollectionViewCell" customModule="Marvel_Cards_Heroes" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="-60.5" width="280" height="380"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="280" height="380"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Espaco" translatesAutoresizingMaskIntoConstraints="NO" id="B8K-cP-aP8">
-                                                    <rect key="frame" x="8" y="0.0" width="264" height="372"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hero Mode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wou-ZF-9BH">
-                                                    <rect key="frame" x="8" y="321" width="264" height="51"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="IRONMANOFWAR001CNCV" family="IRON MAN OF WAR 001C NCV" pointSize="45"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="reactor" translatesAutoresizingMaskIntoConstraints="NO" id="M7o-my-5cz">
-                                                    <rect key="frame" x="40" y="64" width="200" height="200"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                            </subviews>
-                                        </view>
-                                        <constraints>
-                                            <constraint firstItem="B8K-cP-aP8" firstAttribute="top" secondItem="h6R-ZN-bIM" secondAttribute="top" id="2c0-gB-XHb"/>
-                                            <constraint firstItem="B8K-cP-aP8" firstAttribute="leading" secondItem="h6R-ZN-bIM" secondAttribute="leadingMargin" constant="-5" id="7y5-sG-dd0"/>
-                                            <constraint firstAttribute="bottomMargin" secondItem="B8K-cP-aP8" secondAttribute="bottom" constant="-46" id="Haq-N1-OXq"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="B8K-cP-aP8" secondAttribute="trailing" id="TKd-mD-bMh"/>
-                                            <constraint firstItem="B8K-cP-aP8" firstAttribute="leading" secondItem="h6R-ZN-bIM" secondAttribute="leadingMargin" id="b4T-fo-dMt"/>
-                                            <constraint firstItem="B8K-cP-aP8" firstAttribute="top" secondItem="h6R-ZN-bIM" secondAttribute="top" id="jGH-be-ays"/>
-                                            <constraint firstAttribute="bottomMargin" secondItem="B8K-cP-aP8" secondAttribute="bottom" id="oAb-JB-qpD"/>
-                                        </constraints>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="7y5-sG-dd0"/>
-                                                <exclude reference="Haq-N1-OXq"/>
-                                                <exclude reference="jGH-be-ays"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="heightClass=regular-widthClass=regular">
-                                            <mask key="constraints">
-                                                <include reference="7y5-sG-dd0"/>
-                                                <include reference="Haq-N1-OXq"/>
-                                                <include reference="jGH-be-ays"/>
-                                            </mask>
-                                        </variation>
-                                        <connections>
-                                            <outlet property="featuredImageMode" destination="M7o-my-5cz" id="bDQ-Sh-Pxn"/>
-                                            <outlet property="featuredImageView" destination="B8K-cP-aP8" id="Sdn-Fr-TqP"/>
-                                            <outlet property="optionTitleLabel" destination="wou-ZF-9BH" id="7yq-ZC-87K"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
-                                <connections>
-                                    <outlet property="dataSource" destination="FPy-Ji-wOf" id="uOb-Sf-imm"/>
-                                    <outlet property="delegate" destination="FPy-Ji-wOf" id="KU2-aE-9J3"/>
-                                </connections>
-                            </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FmG-aJ-DOf">
-                                <rect key="frame" x="537.5" y="346" width="224" height="47"/>
-                                <fontDescription key="fontDescription" name="IRONMANOFWAR001CNCV" family="IRON MAN OF WAR 001C NCV" pointSize="60"/>
-                                <inset key="contentEdgeInsets" minX="0.0" minY="15" maxX="30" maxY="0.0"/>
-                                <state key="normal" title="Loja" backgroundImage="storeButton">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="YdU-Bh-tMv" kind="show" identifier="segueStore" id="nhD-8j-0Vz"/>
-                                </connections>
-                            </button>
-                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Whp-By-KKN">
-                                <rect key="frame" x="313.5" y="346" width="224" height="47"/>
-                                <fontDescription key="fontDescription" name="IRONMANOFWAR001CNCV" family="IRON MAN OF WAR 001C NCV" pointSize="60"/>
-                                <inset key="contentEdgeInsets" minX="0.0" minY="15" maxX="30" maxY="0.0"/>
-                                <state key="normal" title="Deck " backgroundImage="deckButton">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="0fx-t0-zo6" kind="show" identifier="segueDeck" id="RSu-Uf-aMC"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="7eR-lG-Gn4" firstAttribute="width" secondItem="UD4-U1-Mmc" secondAttribute="width" multiplier="0.6" id="0kS-Ll-c9s"/>
-                            <constraint firstItem="hZm-oD-mg4" firstAttribute="leading" secondItem="IqC-g6-i6X" secondAttribute="trailing" id="384-bq-vFK"/>
-                            <constraint firstItem="v01-aB-JLD" firstAttribute="top" secondItem="7eR-lG-Gn4" secondAttribute="bottom" id="6ZB-Co-brp"/>
-                            <constraint firstItem="Whp-By-KKN" firstAttribute="height" secondItem="FmG-aJ-DOf" secondAttribute="height" id="BAF-M7-U4V"/>
-                            <constraint firstItem="tmb-yP-Cfh" firstAttribute="width" secondItem="eT3-QM-Vmt" secondAttribute="width" multiplier="0.4" id="C1G-UI-Ydw"/>
-                            <constraint firstItem="IqC-g6-i6X" firstAttribute="width" secondItem="tmb-yP-Cfh" secondAttribute="width" id="CMB-3m-BzJ"/>
-                            <constraint firstItem="tmb-yP-Cfh" firstAttribute="leading" secondItem="IqC-g6-i6X" secondAttribute="trailing" multiplier="0.57" id="Czw-hh-leX"/>
-                            <constraint firstItem="hZm-oD-mg4" firstAttribute="top" secondItem="tmb-yP-Cfh" secondAttribute="bottom" multiplier="0.1" id="EYg-Ym-StJ"/>
-                            <constraint firstAttribute="trailing" secondItem="7eR-lG-Gn4" secondAttribute="trailing" id="Ezk-WF-NsC"/>
-                            <constraint firstItem="hZm-oD-mg4" firstAttribute="leading" secondItem="IqC-g6-i6X" secondAttribute="trailing" multiplier="0.74" id="FkB-2Q-Adh"/>
-                            <constraint firstItem="hZm-oD-mg4" firstAttribute="height" secondItem="tmb-yP-Cfh" secondAttribute="height" multiplier="0.7" id="GXA-KT-Mdo"/>
-                            <constraint firstItem="v01-aB-JLD" firstAttribute="top" secondItem="7eR-lG-Gn4" secondAttribute="bottom" constant="20" id="Jsx-2d-3v3"/>
-                            <constraint firstItem="7eR-lG-Gn4" firstAttribute="top" secondItem="tmb-yP-Cfh" secondAttribute="bottom" constant="22.5" id="Jw4-p8-zHK"/>
-                            <constraint firstItem="Whp-By-KKN" firstAttribute="top" secondItem="v01-aB-JLD" secondAttribute="bottom" multiplier="0.88" id="L4G-Pu-0Ah"/>
-                            <constraint firstAttribute="trailing" secondItem="eT3-QM-Vmt" secondAttribute="trailing" id="Lnb-uz-8Xt"/>
-                            <constraint firstItem="IqC-g6-i6X" firstAttribute="height" secondItem="tmb-yP-Cfh" secondAttribute="height" multiplier="0.8" id="Nzt-0e-k2H"/>
-                            <constraint firstItem="IqC-g6-i6X" firstAttribute="top" secondItem="h8F-b7-HTE" secondAttribute="bottom" id="Rmn-IG-1Cb"/>
-                            <constraint firstItem="IqC-g6-i6X" firstAttribute="width" secondItem="tmb-yP-Cfh" secondAttribute="width" multiplier="0.5" id="Ss5-2P-kTQ"/>
-                            <constraint firstAttribute="trailing" secondItem="tmb-yP-Cfh" secondAttribute="trailing" id="VXh-Ud-AJ7"/>
-                            <constraint firstAttribute="centerX" secondItem="v01-aB-JLD" secondAttribute="centerX" id="VdT-P2-Z6W"/>
-                            <constraint firstItem="v8R-Je-XTL" firstAttribute="top" secondItem="eT3-QM-Vmt" secondAttribute="bottom" id="WUL-Ba-qnc"/>
-                            <constraint firstItem="1sx-s8-ea2" firstAttribute="leading" secondItem="UD4-U1-Mmc" secondAttribute="leading" id="Wxb-1k-MQY"/>
-                            <constraint firstItem="v01-aB-JLD" firstAttribute="top" secondItem="1sx-s8-ea2" secondAttribute="bottom" multiplier="0.9" id="Xoh-c4-uc7"/>
-                            <constraint firstItem="FmG-aJ-DOf" firstAttribute="leading" secondItem="v01-aB-JLD" secondAttribute="trailing" multiplier="0.6" id="Yhe-tA-PfK"/>
-                            <constraint firstItem="Whp-By-KKN" firstAttribute="width" secondItem="FmG-aJ-DOf" secondAttribute="width" id="bve-mq-fV4"/>
-                            <constraint firstItem="FmG-aJ-DOf" firstAttribute="top" secondItem="v01-aB-JLD" secondAttribute="bottom" multiplier="0.88" id="c9H-Pe-ibo"/>
-                            <constraint firstItem="v8R-Je-XTL" firstAttribute="top" secondItem="eT3-QM-Vmt" secondAttribute="bottom" id="dPy-XM-Vc2"/>
-                            <constraint firstItem="IqC-g6-i6X" firstAttribute="height" secondItem="tmb-yP-Cfh" secondAttribute="height" id="fP7-J1-D87"/>
-                            <constraint firstItem="eT3-QM-Vmt" firstAttribute="leading" secondItem="UD4-U1-Mmc" secondAttribute="leading" id="fxn-RF-WYi"/>
-                            <constraint firstAttribute="height" secondItem="v01-aB-JLD" secondAttribute="height" multiplier="8" id="hXy-pZ-nr6"/>
-                            <constraint firstItem="v01-aB-JLD" firstAttribute="leading" secondItem="UD4-U1-Mmc" secondAttribute="leading" id="ihP-zX-fgg"/>
-                            <constraint firstItem="tmb-yP-Cfh" firstAttribute="top" secondItem="h8F-b7-HTE" secondAttribute="bottom" id="jRp-VK-bLu"/>
-                            <constraint firstItem="tmb-yP-Cfh" firstAttribute="height" secondItem="eT3-QM-Vmt" secondAttribute="height" multiplier="0.1" id="k8X-4g-sGi"/>
-                            <constraint firstAttribute="trailing" secondItem="v01-aB-JLD" secondAttribute="trailing" id="oQV-Bi-o5k"/>
-                            <constraint firstItem="hZm-oD-mg4" firstAttribute="width" secondItem="tmb-yP-Cfh" secondAttribute="width" multiplier="0.15" id="qDz-ee-BWm"/>
-                            <constraint firstItem="IqC-g6-i6X" firstAttribute="top" secondItem="tmb-yP-Cfh" secondAttribute="bottom" multiplier="0.1" id="rY6-Va-e8P"/>
-                            <constraint firstItem="v01-aB-JLD" firstAttribute="width" secondItem="FmG-aJ-DOf" secondAttribute="width" multiplier="4" id="sL4-Qt-qFy"/>
-                            <constraint firstItem="1sx-s8-ea2" firstAttribute="height" secondItem="UD4-U1-Mmc" secondAttribute="height" multiplier="0.8" id="snN-Rk-bfS"/>
-                            <constraint firstItem="v01-aB-JLD" firstAttribute="height" secondItem="FmG-aJ-DOf" secondAttribute="height" multiplier="1.1" id="spB-HZ-rwe"/>
-                            <constraint firstItem="v8R-Je-XTL" firstAttribute="top" secondItem="v01-aB-JLD" secondAttribute="bottom" id="tpF-sr-mpI"/>
-                            <constraint firstItem="1sx-s8-ea2" firstAttribute="width" secondItem="UD4-U1-Mmc" secondAttribute="width" multiplier="0.5" id="v9m-p7-RdA"/>
-                            <constraint firstItem="FmG-aJ-DOf" firstAttribute="leading" secondItem="Whp-By-KKN" secondAttribute="trailing" id="wOl-M8-79C"/>
-                            <constraint firstItem="eT3-QM-Vmt" firstAttribute="top" secondItem="UD4-U1-Mmc" secondAttribute="top" id="ypu-GS-e6u"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="6ZB-Co-brp"/>
-                                <exclude reference="dPy-XM-Vc2"/>
-                                <exclude reference="384-bq-vFK"/>
-                                <exclude reference="CMB-3m-BzJ"/>
-                                <exclude reference="Rmn-IG-1Cb"/>
-                                <exclude reference="fP7-J1-D87"/>
-                            </mask>
-                        </variation>
-                    </view>
-                    <navigationItem key="navigationItem" id="7ZV-15-Z0U"/>
-                    <nil key="simulatedStatusBarMetrics"/>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <size key="freeformSize" width="896" height="414"/>
-                    <connections>
-                        <outlet property="deckButton" destination="Whp-By-KKN" id="h3I-ga-bQo"/>
-                        <outlet property="money" destination="IqC-g6-i6X" id="DSK-Z2-hig"/>
-                        <outlet property="storeButton" destination="FmG-aJ-DOf" id="dhy-7B-701"/>
-                        <segue destination="QzQ-MG-zOE" kind="show" identifier="seguePlay" id="maD-r4-hP1"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7Ry-9G-Fic" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3003" y="928"/>
-        </scene>
         <!--Meu Deck-->
         <scene sceneID="fMN-R5-ggr">
             <objects>
@@ -776,7 +577,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ySa-LR-jRu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5110.7142857142853" y="643.47826086956525"/>
+            <point key="canvasLocation" x="4721" y="925"/>
         </scene>
         <!--Shop View Controller-->
         <scene sceneID="ovv-4D-9PS">
@@ -1013,31 +814,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6KV-Rt-3lF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3002" y="1878"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="hSE-ec-wha">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="AjJ-zC-Qfz" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="6bO-w6-REQ"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="R5w-8d-Q7s">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="FPy-Ji-wOf" kind="relationship" relationship="rootViewController" id="C2E-AT-zIX"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="X8a-3C-R3H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2318" y="926"/>
+            <point key="canvasLocation" x="3863" y="1729"/>
         </scene>
     </scenes>
     <resources>
         <image name="Booster1" width="331" height="571"/>
         <image name="BotaoHome" width="333" height="219"/>
-        <image name="Espaco" width="218" height="276"/>
         <image name="Moeda" width="1024" height="1031"/>
         <image name="Universo_Marvel" width="1200" height="688"/>
         <image name="backButton" width="315" height="210"/>
@@ -1046,13 +828,8 @@
         <image name="bar3" width="1056" height="327"/>
         <image name="bar5" width="3072" height="255"/>
         <image name="bar6" width="3072" height="255"/>
-        <image name="capitan america" width="940" height="1200"/>
         <image name="comics-11.jpg" width="1296" height="864"/>
-        <image name="deckButton" width="2985" height="1281"/>
-        <image name="lugar_do_dinheiro" width="987" height="297"/>
         <image name="marvel logo 1" width="504" height="186"/>
-        <image name="reactor" width="894" height="894"/>
-        <image name="storeButton" width="2985" height="1290"/>
         <image name="tela" width="1416" height="1041"/>
     </resources>
 </document>

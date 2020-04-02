@@ -1,0 +1,16 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Marvel Cards Heroes' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Marvel Cards Heroes
+  pod 'SwiftLint'
+
+  target 'Marvel Cards HeroesTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

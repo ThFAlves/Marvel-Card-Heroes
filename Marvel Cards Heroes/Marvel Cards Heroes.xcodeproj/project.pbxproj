@@ -18,25 +18,17 @@
 		0F72D11D1B59E88F00708E7D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F72D11F1B59E88F00708E7D /* Localizable.strings */; };
 		0F72D1221B59E88F00708E7D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F72D1241B59E88F00708E7D /* InfoPlist.strings */; };
 		0F72D1251B59E8A700708E7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F72D1271B59E8A700708E7D /* Main.storyboard */; };
-		0FD4B7A41B51AA490087CA93 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD4B7A31B51AA490087CA93 /* MenuViewController.swift */; };
 		0FD4B7A81B51B1AB0087CA93 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD4B7A71B51B1AB0087CA93 /* ShopViewController.swift */; };
 		0FD4B7AA1B51BAA20087CA93 /* OptionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD4B7A91B51BAA20087CA93 /* OptionCollectionViewCell.swift */; };
 		0FD4B7AC1B51BAD00087CA93 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD4B7AB1B51BAD00087CA93 /* Options.swift */; };
-		2AA706811B5D214F00A29925 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA706801B5D214F00A29925 /* Card.swift */; };
 		2AA7068F1B5ED29E00A29925 /* iron_man_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AA7068E1B5ED29E00A29925 /* iron_man_screen.png */; };
 		2AD63E2E1B5EDDC200BFCDDD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AD63E2D1B5EDDC200BFCDDD /* LaunchScreen.xib */; };
 		2AD63E321B5F52FD00BFCDDD /* symbol.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD63E311B5F52FD00BFCDDD /* symbol.png */; };
 		2AD63E341B5F5DF500BFCDDD /* MeuDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD63E331B5F5DF500BFCDDD /* MeuDeck.swift */; };
-		2AD63E361B5F607200BFCDDD /* CardsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD63E351B5F607200BFCDDD /* CardsCollectionViewCell.swift */; };
 		7F3A37E31B599191007A6D33 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A37E21B599191007A6D33 /* GameScene.swift */; };
 		7F3A37E91B5991C5007A6D33 /* MakeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A37E81B5991C5007A6D33 /* MakeCard.swift */; };
-		7F3A37EF1B59927D007A6D33 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A37EE1B59927D007A6D33 /* Deck.swift */; };
-		7F3A37F11B599289007A6D33 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A37F01B599289007A6D33 /* Feature.swift */; };
 		7F3A37F31B599296007A6D33 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A37F21B599296007A6D33 /* User.swift */; };
-		7F3A37F51B5992A9007A6D33 /* CardsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A37F41B5992A9007A6D33 /* CardsService.swift */; };
 		7F3A37F91B5992C6007A6D33 /* UserServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A37F81B5992C6007A6D33 /* UserServices.swift */; };
-		7F3A37FB1B5992DB007A6D33 /* CardDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A37FA1B5992DB007A6D33 /* CardDAO.swift */; };
-		7F3A37FF1B5992EF007A6D33 /* FeatureDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A37FE1B5992EF007A6D33 /* FeatureDAO.swift */; };
 		7F3A38011B5992F9007A6D33 /* UserDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A38001B5992F9007A6D33 /* UserDAO.swift */; };
 		7F3A38041B59930F007A6D33 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A38021B59930F007A6D33 /* Model.xcdatamodeld */; };
 		7F3A38071B59931E007A6D33 /* CarregaCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A38051B59931E007A6D33 /* CarregaCoreData.swift */; };
@@ -48,8 +40,18 @@
 		A7D6C11F1B6191110016D328 /* American Captain.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7D6C11D1B6191110016D328 /* American Captain.ttf */; };
 		A7D6C1201B6191110016D328 /* AVENGEANCE.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7D6C11E1B6191110016D328 /* AVENGEANCE.ttf */; };
 		A7D6C1221B61A4780016D328 /* board_black_line_texture_background_wood_55220_2560x1600.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A7D6C1211B61A4780016D328 /* board_black_line_texture_background_wood_55220_2560x1600.jpg */; };
-		A7D6C1241B61A65C0016D328 /* comics-11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A7D6C1231B61A65C0016D328 /* comics-11.jpg */; };
 		A7D6C1271B61B8F20016D328 /* IRON MAN OF WAR 001C NCV.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7D6C1291B61B8F20016D328 /* IRON MAN OF WAR 001C NCV.ttf */; };
+		AB36A8902431937C00F5E3F7 /* HeroCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB36A88E2431937C00F5E3F7 /* HeroCardCell.swift */; };
+		AB36A8912431937C00F5E3F7 /* HeroCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB36A88F2431937C00F5E3F7 /* HeroCardCell.xib */; };
+		AB36A8932432DDB700F5E3F7 /* TheCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB36A8922432DDB700F5E3F7 /* TheCards.swift */; };
+		AB36A8952433C80000F5E3F7 /* CardDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB36A8942433C80000F5E3F7 /* CardDAO.swift */; };
+		AB36A8972433CC4A00F5E3F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB36A8962433CC4A00F5E3F7 /* SceneDelegate.swift */; };
+		AB36A89B2433D0F100F5E3F7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB36A89A2433D0F100F5E3F7 /* HomeViewController.swift */; };
+		AB36A8A32433D99D00F5E3F7 /* Home1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB36A8A12433D99D00F5E3F7 /* Home1ViewController.swift */; };
+		AB36A8A42433D99D00F5E3F7 /* Home1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB36A8A22433D99D00F5E3F7 /* Home1ViewController.xib */; };
+		AB36A8A82433DE4800F5E3F7 /* MenuOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB36A8A62433DE4800F5E3F7 /* MenuOptionCell.swift */; };
+		AB36A8A92433DE4800F5E3F7 /* MenuOptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB36A8A72433DE4800F5E3F7 /* MenuOptionCell.xib */; };
+		AB36A8AC2433FBDB00F5E3F7 /* UICollectionView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB36A8AB2433FBDB00F5E3F7 /* UICollectionView+Utils.swift */; };
 		ABF713B524312F2900B98DD6 /* Cards.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABF713B424312F2900B98DD6 /* Cards.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -81,25 +83,17 @@
 		0F72D1261B59E8A700708E7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0F72D1291B59E8AC00708E7D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		0F72D12B1B59E8B100708E7D /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Main.strings; sourceTree = "<group>"; };
-		0FD4B7A31B51AA490087CA93 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = ../MenuViewController.swift; sourceTree = "<group>"; };
 		0FD4B7A71B51B1AB0087CA93 /* ShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		0FD4B7A91B51BAA20087CA93 /* OptionCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionCollectionViewCell.swift; sourceTree = "<group>"; };
 		0FD4B7AB1B51BAD00087CA93 /* Options.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
-		2AA706801B5D214F00A29925 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		2AA7068E1B5ED29E00A29925 /* iron_man_screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iron_man_screen.png; sourceTree = "<group>"; };
 		2AD63E2D1B5EDDC200BFCDDD /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		2AD63E311B5F52FD00BFCDDD /* symbol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = symbol.png; sourceTree = "<group>"; };
 		2AD63E331B5F5DF500BFCDDD /* MeuDeck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeuDeck.swift; sourceTree = "<group>"; };
-		2AD63E351B5F607200BFCDDD /* CardsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsCollectionViewCell.swift; sourceTree = "<group>"; };
 		7F3A37E21B599191007A6D33 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameScene.swift; path = ../GameScene.swift; sourceTree = "<group>"; };
 		7F3A37E81B5991C5007A6D33 /* MakeCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MakeCard.swift; path = ../MakeCard.swift; sourceTree = "<group>"; };
-		7F3A37EE1B59927D007A6D33 /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
-		7F3A37F01B599289007A6D33 /* Feature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
 		7F3A37F21B599296007A6D33 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		7F3A37F41B5992A9007A6D33 /* CardsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsService.swift; sourceTree = "<group>"; };
 		7F3A37F81B5992C6007A6D33 /* UserServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserServices.swift; sourceTree = "<group>"; };
-		7F3A37FA1B5992DB007A6D33 /* CardDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDAO.swift; sourceTree = "<group>"; };
-		7F3A37FE1B5992EF007A6D33 /* FeatureDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureDAO.swift; sourceTree = "<group>"; };
 		7F3A38001B5992F9007A6D33 /* UserDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDAO.swift; sourceTree = "<group>"; };
 		7F3A38031B59930F007A6D33 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		7F3A38051B59931E007A6D33 /* CarregaCoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarregaCoreData.swift; sourceTree = "<group>"; };
@@ -111,9 +105,19 @@
 		A7D6C11D1B6191110016D328 /* American Captain.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "American Captain.ttf"; sourceTree = "<group>"; };
 		A7D6C11E1B6191110016D328 /* AVENGEANCE.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AVENGEANCE.ttf; sourceTree = "<group>"; };
 		A7D6C1211B61A4780016D328 /* board_black_line_texture_background_wood_55220_2560x1600.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = board_black_line_texture_background_wood_55220_2560x1600.jpg; sourceTree = "<group>"; };
-		A7D6C1231B61A65C0016D328 /* comics-11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "comics-11.jpg"; sourceTree = "<group>"; };
 		A7D6C1281B61B8F20016D328 /* pt */ = {isa = PBXFileReference; lastKnownFileType = file; name = pt; path = "pt.lproj/IRON MAN OF WAR 001C NCV.ttf"; sourceTree = "<group>"; };
 		A7D6C12A1B61B8F70016D328 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = "en.lproj/IRON MAN OF WAR 001C NCV.ttf"; sourceTree = "<group>"; };
+		AB36A88E2431937C00F5E3F7 /* HeroCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCardCell.swift; sourceTree = "<group>"; };
+		AB36A88F2431937C00F5E3F7 /* HeroCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroCardCell.xib; sourceTree = "<group>"; };
+		AB36A8922432DDB700F5E3F7 /* TheCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheCards.swift; sourceTree = "<group>"; };
+		AB36A8942433C80000F5E3F7 /* CardDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDAO.swift; sourceTree = "<group>"; };
+		AB36A8962433CC4A00F5E3F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AB36A89A2433D0F100F5E3F7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AB36A8A12433D99D00F5E3F7 /* Home1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home1ViewController.swift; sourceTree = "<group>"; };
+		AB36A8A22433D99D00F5E3F7 /* Home1ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Home1ViewController.xib; sourceTree = "<group>"; };
+		AB36A8A62433DE4800F5E3F7 /* MenuOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOptionCell.swift; sourceTree = "<group>"; };
+		AB36A8A72433DE4800F5E3F7 /* MenuOptionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuOptionCell.xib; sourceTree = "<group>"; };
+		AB36A8AB2433FBDB00F5E3F7 /* UICollectionView+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Utils.swift"; sourceTree = "<group>"; };
 		ABF713B424312F2900B98DD6 /* Cards.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Cards.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,6 +142,10 @@
 		0F26ED4F1B51A8870080D457 = {
 			isa = PBXGroup;
 			children = (
+				AB36A89D2433D95B00F5E3F7 /* Scenes */,
+				AB36A89A2433D0F100F5E3F7 /* HomeViewController.swift */,
+				AB36A8922432DDB700F5E3F7 /* TheCards.swift */,
+				AB36A88D2431934200F5E3F7 /* Cell */,
 				ABF713B324312F0200B98DD6 /* Supporting Files */,
 				2A719F801B5FFB7C005333B0 /* Image_details */,
 				7F3A37E01B59915C007A6D33 /* VO */,
@@ -149,7 +157,6 @@
 				2AD63E2D1B5EDDC200BFCDDD /* LaunchScreen.xib */,
 				0FD4B7AB1B51BAD00087CA93 /* Options.swift */,
 				0FD4B7A91B51BAA20087CA93 /* OptionCollectionViewCell.swift */,
-				2AD63E351B5F607200BFCDDD /* CardsCollectionViewCell.swift */,
 				A75F0AC91B59873A004AC004 /* HeroModeViewController.swift */,
 				7F3A37EA1B5991CE007A6D33 /* Deck Collection */,
 				0F26ED5A1B51A8870080D457 /* Marvel Cards Heroes */,
@@ -170,10 +177,10 @@
 		0F26ED5A1B51A8870080D457 /* Marvel Cards Heroes */ = {
 			isa = PBXGroup;
 			children = (
+				0F26ED5C1B51A8870080D457 /* Info.plist */,
 				0F26ED851B51A9B50080D457 /* Card */,
 				0F26ED841B51A99C0080D457 /* System */,
 				0F26ED831B51A9940080D457 /* Scenes */,
-				A7D6C1231B61A65C0016D328 /* comics-11.jpg */,
 				A7D6C1211B61A4780016D328 /* board_black_line_texture_background_wood_55220_2560x1600.jpg */,
 				0F26ED5B1B51A8870080D457 /* Supporting Files */,
 			);
@@ -186,7 +193,6 @@
 				0F72D11F1B59E88F00708E7D /* Localizable.strings */,
 				0F72D11A1B59E88E00708E7D /* InfoPlist.strings */,
 				0F26ED861B51A9BC0080D457 /* Font */,
-				0F26ED5C1B51A8870080D457 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -222,9 +228,7 @@
 		0F26ED841B51A99C0080D457 /* System */ = {
 			isa = PBXGroup;
 			children = (
-				0F26ED5D1B51A8870080D457 /* AppDelegate.swift */,
 				0F26ED631B51A8870080D457 /* GameViewController.swift */,
-				0FD4B7A31B51AA490087CA93 /* MenuViewController.swift */,
 				0FD4B7A71B51B1AB0087CA93 /* ShopViewController.swift */,
 			);
 			name = System;
@@ -264,7 +268,6 @@
 			isa = PBXGroup;
 			children = (
 				7F3A37F81B5992C6007A6D33 /* UserServices.swift */,
-				7F3A37F41B5992A9007A6D33 /* CardsService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -272,10 +275,7 @@
 		7F3A37E01B59915C007A6D33 /* VO */ = {
 			isa = PBXGroup;
 			children = (
-				2AA706801B5D214F00A29925 /* Card.swift */,
 				7F3A37F21B599296007A6D33 /* User.swift */,
-				7F3A37F01B599289007A6D33 /* Feature.swift */,
-				7F3A37EE1B59927D007A6D33 /* Deck.swift */,
 			);
 			name = VO;
 			sourceTree = "<group>";
@@ -284,8 +284,7 @@
 			isa = PBXGroup;
 			children = (
 				7F3A38001B5992F9007A6D33 /* UserDAO.swift */,
-				7F3A37FE1B5992EF007A6D33 /* FeatureDAO.swift */,
-				7F3A37FA1B5992DB007A6D33 /* CardDAO.swift */,
+				AB36A8942433C80000F5E3F7 /* CardDAO.swift */,
 			);
 			name = DAO;
 			sourceTree = "<group>";
@@ -308,9 +307,56 @@
 			name = Persistence;
 			sourceTree = "<group>";
 		};
+		AB36A88D2431934200F5E3F7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AB36A88E2431937C00F5E3F7 /* HeroCardCell.swift */,
+				AB36A88F2431937C00F5E3F7 /* HeroCardCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		AB36A89D2433D95B00F5E3F7 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				AB36A8AA2433FBB900F5E3F7 /* Extensions */,
+				AB36A89E2433D97000F5E3F7 /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		AB36A89E2433D97000F5E3F7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AB36A8A52433DE2300F5E3F7 /* Cells */,
+				AB36A8A12433D99D00F5E3F7 /* Home1ViewController.swift */,
+				AB36A8A22433D99D00F5E3F7 /* Home1ViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AB36A8A52433DE2300F5E3F7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AB36A8A62433DE4800F5E3F7 /* MenuOptionCell.swift */,
+				AB36A8A72433DE4800F5E3F7 /* MenuOptionCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		AB36A8AA2433FBB900F5E3F7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AB36A8AB2433FBDB00F5E3F7 /* UICollectionView+Utils.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		ABF713B324312F0200B98DD6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0F26ED5D1B51A8870080D457 /* AppDelegate.swift */,
+				AB36A8962433CC4A00F5E3F7 /* SceneDelegate.swift */,
 				ABF713B424312F2900B98DD6 /* Cards.xcassets */,
 				0F26ED681B51A8870080D457 /* Images.xcassets */,
 			);
@@ -327,6 +373,7 @@
 				0F26ED541B51A8870080D457 /* Sources */,
 				0F26ED551B51A8870080D457 /* Frameworks */,
 				0F26ED561B51A8870080D457 /* Resources */,
+				AB01CA6F243150630090FB8E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -403,13 +450,15 @@
 				7F3A38101B599470007A6D33 /* ouro.png in Resources */,
 				A7D6C1221B61A4780016D328 /* board_black_line_texture_background_wood_55220_2560x1600.jpg in Resources */,
 				A7D6C1271B61B8F20016D328 /* IRON MAN OF WAR 001C NCV.ttf in Resources */,
-				A7D6C1241B61A65C0016D328 /* comics-11.jpg in Resources */,
 				2AA7068F1B5ED29E00A29925 /* iron_man_screen.png in Resources */,
 				A7D6C1201B6191110016D328 /* AVENGEANCE.ttf in Resources */,
 				7F3A380E1B599470007A6D33 /* bronze.png in Resources */,
+				AB36A8A42433D99D00F5E3F7 /* Home1ViewController.xib in Resources */,
 				7F3A38111B599470007A6D33 /* prata.png in Resources */,
 				0F26ED691B51A8870080D457 /* Images.xcassets in Resources */,
 				2AD63E2E1B5EDDC200BFCDDD /* LaunchScreen.xib in Resources */,
+				AB36A8912431937C00F5E3F7 /* HeroCardCell.xib in Resources */,
+				AB36A8A92433DE4800F5E3F7 /* MenuOptionCell.xib in Resources */,
 				0F72D11D1B59E88F00708E7D /* Localizable.strings in Resources */,
 				2AD63E321B5F52FD00BFCDDD /* symbol.png in Resources */,
 				A7D6C11F1B6191110016D328 /* American Captain.ttf in Resources */,
@@ -429,32 +478,52 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AB01CA6F243150630090FB8E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0F26ED541B51A8870080D457 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7F3A38071B59931E007A6D33 /* CarregaCoreData.swift in Sources */,
-				0FD4B7A41B51AA490087CA93 /* MenuViewController.swift in Sources */,
 				0FD4B7A81B51B1AB0087CA93 /* ShopViewController.swift in Sources */,
 				0F26ED641B51A8870080D457 /* GameViewController.swift in Sources */,
-				2AD63E361B5F607200BFCDDD /* CardsCollectionViewCell.swift in Sources */,
-				7F3A37F11B599289007A6D33 /* Feature.swift in Sources */,
+				AB36A8932432DDB700F5E3F7 /* TheCards.swift in Sources */,
+				AB36A8A32433D99D00F5E3F7 /* Home1ViewController.swift in Sources */,
+				AB36A8A82433DE4800F5E3F7 /* MenuOptionCell.swift in Sources */,
 				A75F0ACA1B59873A004AC004 /* HeroModeViewController.swift in Sources */,
 				7F3A37F31B599296007A6D33 /* User.swift in Sources */,
-				7F3A37FF1B5992EF007A6D33 /* FeatureDAO.swift in Sources */,
-				2AA706811B5D214F00A29925 /* Card.swift in Sources */,
-				7F3A37FB1B5992DB007A6D33 /* CardDAO.swift in Sources */,
+				AB36A8972433CC4A00F5E3F7 /* SceneDelegate.swift in Sources */,
+				AB36A8902431937C00F5E3F7 /* HeroCardCell.swift in Sources */,
+				AB36A8952433C80000F5E3F7 /* CardDAO.swift in Sources */,
+				AB36A89B2433D0F100F5E3F7 /* HomeViewController.swift in Sources */,
 				7F3A37E91B5991C5007A6D33 /* MakeCard.swift in Sources */,
 				0FD4B7AC1B51BAD00087CA93 /* Options.swift in Sources */,
 				7F3A37E31B599191007A6D33 /* GameScene.swift in Sources */,
-				7F3A37F51B5992A9007A6D33 /* CardsService.swift in Sources */,
 				7F3A37F91B5992C6007A6D33 /* UserServices.swift in Sources */,
 				0F5DCEE71B54527800D6A2AF /* BoosterCell.swift in Sources */,
+				AB36A8AC2433FBDB00F5E3F7 /* UICollectionView+Utils.swift in Sources */,
 				0FD4B7AA1B51BAA20087CA93 /* OptionCollectionViewCell.swift in Sources */,
 				7F3A38011B5992F9007A6D33 /* UserDAO.swift in Sources */,
 				2AD63E341B5F5DF500BFCDDD /* MeuDeck.swift in Sources */,
-				7F3A37EF1B59927D007A6D33 /* Deck.swift in Sources */,
 				7F3A38041B59930F007A6D33 /* Model.xcdatamodeld in Sources */,
 				0F26ED5E1B51A8870080D457 /* AppDelegate.swift in Sources */,
 				0F0D8B171B5580FC002FDBAD /* ShopScene.swift in Sources */,

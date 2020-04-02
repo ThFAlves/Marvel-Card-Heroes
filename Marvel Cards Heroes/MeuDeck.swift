@@ -8,6 +8,7 @@
 
 import UIKit
 
+// swiftlint:disable all
 class MeuDeck: UIViewController {
     
     let cartas = ["Ant-man.png","Captain America.png","Ciclope.png","Doctor Strange.png","Fenix.png","Homem de Ferro.png","Human-Touch.png","Lizard.png","Loki.png","Nick Fury.png","Quicksilver.png","Red Hulk.png","Spider-man.png","War Machine.png","Winter Soldier.png","3D-Man.png","Hulk.png","Deadpool.png","Noturno.png","Thor.png","Quill.png","Visão.png","Wolverine.png","Demolidor.png"]
@@ -18,7 +19,7 @@ class MeuDeck: UIViewController {
         super.viewDidLoad()
     }
     
-    private struct Storyboard{
+    private struct Storyboard {
         static let CellIdentifier = "CellCards"
     }
     
@@ -34,35 +35,33 @@ extension MeuDeck: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Storyboard.CellIdentifier, for: indexPath as IndexPath) as! CardsCollectionViewCell
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Storyboard.CellIdentifier, for: indexPath as IndexPath) as? HeroCardCell else {
+            return UICollectionViewCell()
+        }
         
+        let image = UIImage(named: cartas[indexPath.row])
+        cell.cardImage.image = image
         
-        let image: UIImage = UIImage(named: cartas[indexPath.row])!
-        cell.Card.image = image
-        
-        
-        let carta:Card! = CardDAO.findByName(name: heroes[indexPath.row])[0]
-        if (carta != nil) {
+        let carta = CardDAO.findByName(name: heroes[indexPath.row])
+        if let carta = carta {
             cell.Intelligence.text = "\(carta.intelligence)"
             cell.Strength.text = "\(carta.strength)"
             cell.Speed.text = "\(carta.speed)"
             cell.Durability.text = "\(carta.durability)"
             cell.Power.text = "\(carta.power)"
             cell.Combat.text = "\(carta.combat)"
-            cell.nameHero.text = "\(carta.name)"
+            cell.name.text = "\(carta.name)"
             
-            cell.intelligenceImage.image = UIImage(named: carta.category+".png")
-            cell.StrengthImage.image = UIImage(named: carta.category+".png")
-            cell.SpeedImage.image = UIImage(named: carta.category+".png")
-            cell.DurabilityImage.image = UIImage(named: carta.category+".png")
-            cell.PowerImage.image = UIImage(named: carta.category+".png")
-            cell.CombatImage.image = UIImage(named: carta.category+".png")
+            cell.intelligenceImage.image = UIImage(named: carta.category.rawValue+".png")
+            cell.StrengthImage.image = UIImage(named: carta.category.rawValue+".png")
+            cell.SpeedImage.image = UIImage(named: carta.category.rawValue+".png")
+            cell.DurabilityImage.image = UIImage(named: carta.category.rawValue+".png")
+            cell.PowerImage.image = UIImage(named: carta.category.rawValue+".png")
+            cell.CombatImage.image = UIImage(named: carta.category.rawValue+".png")
         }
         
         cell.clipsToBounds = true
         
         return cell
-    }
-
-    
+    }    
 }

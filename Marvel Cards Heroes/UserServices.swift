@@ -8,11 +8,10 @@
 
 import Foundation
 
-class UserServices
-{
-    static func createUser(name:String, wins:NSNumber, loss:NSNumber, level: NSNumber, money: NSNumber)
-    {
-        var user:User = User()
+class UserServices {
+    static func createUser(name: String, wins: NSNumber, loss: NSNumber, level: NSNumber, money: NSNumber) {
+
+        let user = User()
         user.name = name
         user.wins = wins
         user.loss = loss
@@ -21,20 +20,15 @@ class UserServices
         
         // insert it
         UserDAO.insert(objectToBeInserted: user)
-        
     }
-    
-    static func buy (money: NSNumber) -> Bool
-    {
-        var exist = UserDAO.verifMoney(money: money)
+
+    static func buy (money: NSNumber) -> Bool {
+        let exist = UserDAO.verifMoney(money: money)
         
-        if (exist == true){
-            
+        if exist {
             UserDAO.decMoney(money: money)
-            
             return true
-        }else{
-            return false
         }
+        return false
     }
 }

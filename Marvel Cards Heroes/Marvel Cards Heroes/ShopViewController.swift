@@ -9,6 +9,7 @@
 import UIKit
 import SpriteKit
 
+// swiftlint:disable all
 class ShopViewController: UIViewController, UICollectionViewDelegate, SKSceneDelegate {
    
     var xPosition: CGFloat = 0.0
@@ -115,7 +116,7 @@ class ShopViewController: UIViewController, UICollectionViewDelegate, SKSceneDel
         
         UIView.animate(withDuration: 0, delay: 0, options: .curveEaseOut, animations: {
             
-            let frame: CGRect = self.buyView.frame
+            let _: CGRect = self.buyView.frame
             
             }, completion: { finished in
                 self.buyView.frame.origin.x = self.view.frame.size.width ;
@@ -136,44 +137,45 @@ class ShopViewController: UIViewController, UICollectionViewDelegate, SKSceneDel
         let buyButtonLabel = NSLocalizedString("Buy Pack", comment:"Botao Comprar")
         
         self.buyButton.setTitle(buyButtonLabel, for: .normal)
-        let _:BoosterCell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath as IndexPath) as! BoosterCell
-        
-        collectionView.selectItem(at: indexPath as IndexPath, animated: true, scrollPosition: UICollectionView.ScrollPosition.centeredHorizontally)
+                
+        collectionView.selectItem(at: indexPath as IndexPath,
+                                  animated: true,
+                                  scrollPosition: .centeredHorizontally)
         //zoomToSelectedImage(indexPath: indexPath,cell: cell)
         UIView.animate(withDuration: 0, delay: 0, options: .curveEaseOut, animations: {
             
-            let bronzeLabel = NSLocalizedString("Bronze Pack", comment:"Bronze")
-            let silverLabel = NSLocalizedString("Silver Pack", comment:"Prata")
-            let goldLabel = NSLocalizedString("Golden Pack", comment:"Ouro")
-            let legendaryLabel = NSLocalizedString("Legendary Pack", comment:"Lendario")
-            let infoBronzeOneLabel = NSLocalizedString("3 Bronze Cards", comment:"Botao Home")
-            _ = NSLocalizedString("1 Silver Card", comment:"Botao Home")
-            let infoSilverOneLabel = NSLocalizedString("2 Bronze Cards", comment:"Botao Home")
-            let infoSilverTwoLabel = NSLocalizedString("1 Silver Card", comment:"Botao Home")
-            let infoGoldenOneLabel = NSLocalizedString("2 Silver Cards", comment:"Botao Home")
-            let infoGoldenTwoLabel = NSLocalizedString("1 Golden Card", comment:"Botao Home")
-            let infoLegendaryOneLabel = NSLocalizedString("1 Golden Card", comment:"Botao Home")
-            let infoLegendaryTwoLabel = NSLocalizedString("1 Legendary Card", comment:"Botao Home")
+            let bronzeLabel = NSLocalizedString("Bronze Pack", comment: "Bronze")
+            let silverLabel = NSLocalizedString("Silver Pack", comment: "Prata")
+            let goldLabel = NSLocalizedString("Golden Pack", comment: "Ouro")
+            let legendaryLabel = NSLocalizedString("Legendary Pack", comment: "Lendario")
+            let infoBronzeOneLabel = NSLocalizedString("3 Bronze Cards", comment: "Botao Home")
+            _ = NSLocalizedString("1 Silver Card", comment: "Botao Home")
+            let infoSilverOneLabel = NSLocalizedString("2 Bronze Cards", comment: "Botao Home")
+            let infoSilverTwoLabel = NSLocalizedString("1 Silver Card", comment: "Botao Home")
+            let infoGoldenOneLabel = NSLocalizedString("2 Silver Cards", comment: "Botao Home")
+            let infoGoldenTwoLabel = NSLocalizedString("1 Golden Card", comment: "Botao Home")
+            let infoLegendaryOneLabel = NSLocalizedString("1 Golden Card", comment: "Botao Home")
+            let infoLegendaryTwoLabel = NSLocalizedString("1 Legendary Card", comment: "Botao Home")
             
-            if indexPath.row == 0{
+            if indexPath.row == 0 {
                 self.buyImage.image = UIImage(named: "Booster1")
                 self.boosterName.text = bronzeLabel
                 self.infoOne.text = infoBronzeOneLabel
                 self.infoTwo.text = ""
-            }else if indexPath.row == 1{
+            }else if indexPath.row == 1 {
                 
                 self.buyImage.image = UIImage(named: "Booster4")
                 self.boosterName.text = silverLabel
                 self.infoOne.text = infoSilverOneLabel
                 self.infoTwo.text = infoSilverTwoLabel
-            }else if indexPath.row == 2{
+            }else if indexPath.row == 2 {
                 
                 self.buyImage.image = UIImage(named: "Booster2")
                 self.boosterName.text = goldLabel
                 self.infoOne.text = infoGoldenOneLabel
                 self.infoTwo.text = infoGoldenTwoLabel
                 
-            }else if indexPath.row == 3{
+            }else if indexPath.row == 3 {
                 
                 self.buyImage.image = UIImage(named: "Booster3")
                 self.boosterName.text = legendaryLabel
@@ -181,14 +183,14 @@ class ShopViewController: UIViewController, UICollectionViewDelegate, SKSceneDel
                 self.infoTwo.text = infoLegendaryTwoLabel
             }
 
-            }, completion: { finished in
+            }, completion: { _ in
 
         })
         
         self.viewGoLeft()
     }
     
-    func zoomToSelectedImage(indexPath: NSIndexPath, cell:UICollectionViewCell)
+    func zoomToSelectedImage(indexPath: NSIndexPath, cell: UICollectionViewCell)
     {
         let image = UIImage(named: self.tableImages[indexPath.row])
         
@@ -198,7 +200,7 @@ class ShopViewController: UIViewController, UICollectionViewDelegate, SKSceneDel
         
         zoomImage.contentMode = UIView.ContentMode.scaleAspectFit
         
-        let zoomFrameTo = CGRect(x: 1024 * -0.1,y: self.view.frame.height / 10, width: self.view.frame.size.width * 0.8,height: self.view.frame.size.height * 0.8);
+        let zoomFrameTo = CGRect(x: 1024 * -0.1, y: self.view.frame.height / 10, width: self.view.frame.size.width * 0.8,height: self.view.frame.size.height * 0.8);
         
         let zoomFrameFrom = cell.frame;
         
@@ -225,6 +227,5 @@ extension ShopViewController: UICollectionViewDataSource {
            cell.boosterImage.image = UIImage(named: tableImages[indexPath.row])
            
            return cell
-        
     }
 }

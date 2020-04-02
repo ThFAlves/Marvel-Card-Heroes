@@ -8,6 +8,7 @@
 
 import UIKit
 
+// swiftlint:disable all
 class CardsCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var nameHero: UILabel!

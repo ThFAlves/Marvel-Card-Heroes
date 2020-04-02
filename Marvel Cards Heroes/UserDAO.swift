@@ -9,8 +9,8 @@
 import Foundation
 import CoreData
 
-class UserDAO
-{
+// swiftlint:disable all
+class UserDAO {
     
     static func verifMoney(money: NSNumber) -> Bool
     {
@@ -68,8 +68,7 @@ class UserDAO
         }
     }
     
-    static func returnMoney() -> NSNumber
-    {
+    static func returnMoney() -> NSNumber {
         
         // creating fetch request
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "User")
@@ -83,8 +82,7 @@ class UserDAO
         }
     }
     
-    static func findByName(name: String) -> [User]
-    {
+    static func findByName(name: String) -> [User] {
         // creating fetch request
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "User")
         
@@ -112,5 +110,4 @@ class UserDAO
             print("Error")
         }
     }
-    
 }

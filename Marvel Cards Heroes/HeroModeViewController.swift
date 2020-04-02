@@ -9,8 +9,7 @@
 import UIKit
 
 class HeroModeViewController: UIViewController {
-    
-    
+
     @IBOutlet weak var easeButtonOutlet: UIButton!
     @IBOutlet weak var mediumButtonOutlet: UIButton!
     @IBOutlet weak var hardButtonOutlet: UIButton!
@@ -18,37 +17,29 @@ class HeroModeViewController: UIViewController {
     @IBOutlet weak var homeButtonOutlet: UIButton!
     
     @IBOutlet weak var spaceToBar1: NSLayoutConstraint!
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let easyLabel = NSLocalizedString("Easy", comment:"Modo Facil")
-        let mediumLabel = NSLocalizedString("Medium", comment:"Modo Medio")
-        let hardLabel = NSLocalizedString("Hard", comment:"Modo Dificil")
-        let startLabel = NSLocalizedString("Start", comment:"Modo Play Game")
+        let easyLabel = NSLocalizedString("Easy", comment: "Modo Facil")
+        let mediumLabel = NSLocalizedString("Medium", comment: "Modo Medio")
+        let hardLabel = NSLocalizedString("Hard", comment: "Modo Dificil")
+        let startLabel = NSLocalizedString("Start", comment: "Modo Play Game")
         
         easeButtonOutlet.setTitle(easyLabel, for: .normal)
         mediumButtonOutlet.setTitle(mediumLabel, for: .normal)
         hardButtonOutlet.setTitle(hardLabel, for: .normal)
         startButtonOutlet.setTitle(startLabel, for: .normal)
         spaceToBar1.constant = 1000
-        
-        // Do any additional setup after loading the view.
-        
-        
-        
-        
-        
     }
-    
+
     @IBAction func easeButtonAction(sender: AnyObject) {
         easeButtonOutlet.isEnabled = false
         mediumButtonOutlet.isEnabled = true
         hardButtonOutlet.isEnabled = true
         movebutton()
     }
-    
+
     @IBAction func mediundButtonAction(sender: AnyObject) {
         easeButtonOutlet.isEnabled = true
         mediumButtonOutlet.isEnabled = false
@@ -61,23 +52,18 @@ class HeroModeViewController: UIViewController {
         hardButtonOutlet.isEnabled = false
         movebutton()
     }
-    
+
     @IBAction func dismiss(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
     }
-    
-    func movebutton(){
+
+    func movebutton() {
 
         UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseOut, animations: {
-            
-            
+
             self.spaceToBar1.constant = 0
             self.view.layoutIfNeeded()
-            
-            }, completion: { finished in
-                
-                
-        })
+            }, completion: { _ in })
 
     }
 }

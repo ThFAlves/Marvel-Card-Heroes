@@ -16,16 +16,15 @@ class User: NSManagedObject {
     @NSManaged var money: NSNumber
     @NSManaged var name: String
     @NSManaged var wins: NSNumber
-    
-    convenience init()
-    {
+
+    convenience init() {
         //get context
         let context: NSManagedObjectContext = DatabaseManager.sharedInstance.managedObjectContext!
-        
+
         //create entity description
         let entityDescription: NSEntityDescription? = NSEntityDescription.entity(forEntityName: "User", in: context)
-        
+
         //Call super using
-        self.init(entity:entityDescription!, insertInto: context)
+        self.init(entity: entityDescription!, insertInto: context)
     }
 }

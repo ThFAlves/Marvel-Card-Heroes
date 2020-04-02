@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="IRON MAN OF WAR 001C NCV.ttf">
+            <string>IRONMANOFWAR001CNCV</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Home1ViewController" customModule="Marvel_Cards_Heroes" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="usf-Ns-uaV" id="1wh-Rp-avr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="comics-11.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2TL-sO-HFz">
+                    <rect key="frame" x="0.0" y="0.0" width="655" height="375"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capitan america" translatesAutoresizingMaskIntoConstraints="NO" id="ERT-mw-AfZ">
+                    <rect key="frame" x="0.0" y="0.0" width="255" height="375"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="ERT-mw-AfZ" secondAttribute="height" multiplier="89:131" id="47E-Cg-aX6"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wZ8-34-Bit">
+                    <rect key="frame" x="427" y="0.0" width="240" height="60"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lugar_do_dinheiro" translatesAutoresizingMaskIntoConstraints="NO" id="Uqh-Fk-QZQ">
+                            <rect key="frame" x="0.0" y="0.0" width="240" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Uqh-Fk-QZQ" secondAttribute="height" multiplier="4:1" id="7H6-gp-v0l"/>
+                                <constraint firstAttribute="height" constant="60" id="jGa-JV-WKF"/>
+                            </constraints>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="ecM-gU-PrV">
+                            <rect key="frame" x="48.5" y="8" width="143.5" height="44"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Moeda" translatesAutoresizingMaskIntoConstraints="NO" id="IDl-ic-6Qo">
+                                    <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="IDl-ic-6Qo" secondAttribute="height" multiplier="1:1" id="mI3-rF-VOo"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="900" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1u5-rK-plv">
+                                    <rect key="frame" x="68" y="0.0" width="75.5" height="44"/>
+                                    <fontDescription key="fontDescription" name="IRONMANOFWAR001CNCV" family="IRON MAN OF WAR 001C NCV" pointSize="45"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Uqh-Fk-QZQ" firstAttribute="top" secondItem="wZ8-34-Bit" secondAttribute="top" id="8hk-Zp-4ea"/>
+                        <constraint firstAttribute="bottom" secondItem="Uqh-Fk-QZQ" secondAttribute="bottom" id="F6Q-oc-zMq"/>
+                        <constraint firstAttribute="trailing" secondItem="Uqh-Fk-QZQ" secondAttribute="trailing" id="QbA-kg-ZBl"/>
+                        <constraint firstItem="Uqh-Fk-QZQ" firstAttribute="leading" secondItem="wZ8-34-Bit" secondAttribute="leading" id="bU9-Yf-cMS"/>
+                        <constraint firstItem="ecM-gU-PrV" firstAttribute="top" secondItem="wZ8-34-Bit" secondAttribute="top" constant="8" id="l07-ya-6lx"/>
+                        <constraint firstItem="ecM-gU-PrV" firstAttribute="centerX" secondItem="wZ8-34-Bit" secondAttribute="centerX" id="oTR-oy-wYs"/>
+                        <constraint firstAttribute="bottom" secondItem="ecM-gU-PrV" secondAttribute="bottom" constant="8" id="pe9-hQ-idr"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="usf-Ns-uaV">
+                    <rect key="frame" x="255" y="60" width="412" height="255"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eLG-hA-hCp">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Ix7-yS-4FR"/>
+                        <outlet property="delegate" destination="-1" id="SgP-mJ-398"/>
+                    </connections>
+                </collectionView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bar1" translatesAutoresizingMaskIntoConstraints="NO" id="cS9-Gc-lLA">
+                    <rect key="frame" x="0.0" y="337" width="667" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="cS9-Gc-lLA" secondAttribute="height" multiplier="896:51" id="drm-nA-ThC"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1JZ-G2-0xA">
+                    <rect key="frame" x="399" y="345" width="268" height="30"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="vMB-uP-pij">
+                            <rect key="frame" x="0.0" y="0.0" width="268" height="30"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S7R-kW-5x3">
+                                    <rect key="frame" x="0.0" y="0.0" width="134" height="30"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="IRONMANOFWAR001CNCV" family="IRON MAN OF WAR 001C NCV" pointSize="40"/>
+                                    <inset key="contentEdgeInsets" minX="0.0" minY="15" maxX="30" maxY="0.0"/>
+                                    <state key="normal" title="Loja">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                                <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5q3-xB-uI1">
+                                    <rect key="frame" x="134" y="0.0" width="134" height="30"/>
+                                    <fontDescription key="fontDescription" name="IRONMANOFWAR001CNCV" family="IRON MAN OF WAR 001C NCV" pointSize="40"/>
+                                    <inset key="contentEdgeInsets" minX="0.0" minY="15" maxX="30" maxY="0.0"/>
+                                    <state key="normal" title="Deck ">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="vMB-uP-pij" firstAttribute="top" secondItem="1JZ-G2-0xA" secondAttribute="top" id="Bvk-cQ-njD"/>
+                        <constraint firstAttribute="bottom" secondItem="vMB-uP-pij" secondAttribute="bottom" id="To6-2j-qMo"/>
+                        <constraint firstItem="vMB-uP-pij" firstAttribute="leading" secondItem="1JZ-G2-0xA" secondAttribute="leading" id="cZW-6d-vM5"/>
+                        <constraint firstAttribute="height" constant="30" id="jJ8-6c-EaE"/>
+                        <constraint firstAttribute="trailing" secondItem="vMB-uP-pij" secondAttribute="trailing" id="nu0-L1-65d"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ERT-mw-AfZ" secondAttribute="bottom" id="7dx-U5-qdq"/>
+                <constraint firstItem="usf-Ns-uaV" firstAttribute="top" secondItem="wZ8-34-Bit" secondAttribute="bottom" id="8sV-wL-0SK"/>
+                <constraint firstAttribute="trailing" secondItem="cS9-Gc-lLA" secondAttribute="trailing" id="Aht-qi-Zak"/>
+                <constraint firstAttribute="trailingMargin" secondItem="2TL-sO-HFz" secondAttribute="trailingMargin" id="Cxx-I4-v3v"/>
+                <constraint firstItem="cS9-Gc-lLA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="FW3-4Y-hib"/>
+                <constraint firstItem="usf-Ns-uaV" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="HUT-rE-2bM"/>
+                <constraint firstAttribute="bottom" secondItem="1JZ-G2-0xA" secondAttribute="bottom" id="Pbz-uH-d3w"/>
+                <constraint firstAttribute="trailing" secondItem="usf-Ns-uaV" secondAttribute="trailing" id="TSH-xI-Umu"/>
+                <constraint firstItem="ERT-mw-AfZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Tcj-Iy-RhM"/>
+                <constraint firstItem="wZ8-34-Bit" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="UwE-Ds-OzB"/>
+                <constraint firstAttribute="trailing" secondItem="wZ8-34-Bit" secondAttribute="trailing" id="VK9-Gx-tLe"/>
+                <constraint firstItem="2TL-sO-HFz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="WIV-ey-Pm0"/>
+                <constraint firstAttribute="bottom" secondItem="2TL-sO-HFz" secondAttribute="bottom" id="Ygx-gc-s8z"/>
+                <constraint firstItem="2TL-sO-HFz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="e5e-mr-lRJ"/>
+                <constraint firstAttribute="trailing" secondItem="1JZ-G2-0xA" secondAttribute="trailing" id="h2N-ga-HMl"/>
+                <constraint firstAttribute="top" secondItem="ERT-mw-AfZ" secondAttribute="top" id="hcB-YK-YuX"/>
+                <constraint firstItem="usf-Ns-uaV" firstAttribute="leading" secondItem="ERT-mw-AfZ" secondAttribute="trailing" id="i38-zq-ZHj"/>
+                <constraint firstAttribute="bottom" secondItem="cS9-Gc-lLA" secondAttribute="bottom" id="qen-Zs-lnv"/>
+            </constraints>
+            <point key="canvasLocation" x="138.0809595202399" y="88.799999999999997"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Moeda" width="1024" height="1031"/>
+        <image name="bar1" width="3072" height="249"/>
+        <image name="capitan america" width="940" height="1200"/>
+        <image name="comics-11.jpg" width="1296" height="864"/>
+        <image name="lugar_do_dinheiro" width="987" height="297"/>
+    </resources>
+</document>

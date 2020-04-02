@@ -9,6 +9,5 @@
 import UIKit
 
 class BoosterCell: UICollectionViewCell {
-    
     @IBOutlet var boosterImage: UIImageView!
 }
